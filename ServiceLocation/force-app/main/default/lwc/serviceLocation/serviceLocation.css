@@ -1,0 +1,4 @@
+.map-container {
+        display: block; /* This ensures the map takes up the full width available */
+        margin-bottom: 20px; /* Adds some space between the map and markers */
+    }

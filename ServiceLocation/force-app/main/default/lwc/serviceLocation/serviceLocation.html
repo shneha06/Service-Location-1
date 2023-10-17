@@ -1,0 +1,34 @@
+<template>
+    <lightning-card  title="Service Location">
+        <!-- <lightning-button label="New" slot="actions"></lightning-button> -->
+        <!-- <p class="slds-p-horizontal_small">Card Body (custom component)</p>  -->
+        <!-- <p slot="footer">Card Footer</p> -->
+    
+    <!-- <div class="slds-text-align_center">
+        <span class="slds-text-heading_large">Service Location</span>
+    </div> -->         
+    <div class="slds-align_absolute-center slds-m-vertical_large">
+
+            <lightning-button variant="success" label="Start Sharing Location" title="Successful action" onclick={handleStart} class="slds-m-left_x-small"></lightning-button>    
+        <lightning-button variant="destructive" label="End Sharing Location" title="Destructive action" onclick={handleEnd} class="slds-m-left_x-small"></lightning-button>
+
+    </div>
+</lightning-card> 
+<br>
+<lightning-card>
+    <div class="map-container">
+        <lightning-map map-markers={mapMarkers}></lightning-map>
+    </div>
+    <!-- <div class="slds-align_absolute-center slds-m-vertical_large">
+    <lightning-map map-markers={mapMarkers}> </lightning-map>
+</div> -->
+    <div class="slds-m-top_medium
+    slds-align_absolute-center slds-m-vertical_large">
+        <lightning-button label="Get Driving Directions" 
+            title="Get Driving Directions" 
+            variant="brand" 
+            onclick={navigateToDrivingDirections}>
+        </lightning-button>
+    </div>
+</lightning-card>
+</template>
